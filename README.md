@@ -1,21 +1,40 @@
 # Keepalive-web
 Front end for [keepalive-service](https://github.com/gangstead/keepalive-service)
 
-# Developing
+## Current state
+- [x] Retrieves a list of buttons from the back end and puts them in a table.
+- [ ] Add/remove buttons
+- [ ] Authentication
 
-```sh
-> npm install -g node-pre-gyp  (first time only)
-> npm install
-> npm start
-```
+## Running with backend service
+The proxy is expecting [keepalive-service](https://github.com/gangstead/keepalive-service) running the API locally.
+- In one console tab start the service with `npm run dcr start`
+- In another console tab start the front end (this project), with `npm run start`
 
-This should start the server and open a tab in your browser to http://localhost:3000 with the application running.  This should also reload as you save files.
+# Angular CLI generated stuff below
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
-# Source
-I started this project with [angular-starter](https://github.com/AngularClass/angular-starter) because it appears to have everything you could ever want already set up:
-> An Angular starter kit featuring [Angular 4](https://angular.io), [Ahead of Time Compile](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html), [Router](https://angular.io/docs/ts/latest/guide/router.html), [Forms](https://angular.io/docs/ts/latest/guide/forms.html),
-[Http](https://angular.io/docs/ts/latest/guide/server-communication.html),
-[Services](https://gist.github.com/gdi2290/634101fec1671ee12b3e#_follow_@AngularClass_on_twitter),
-[Tests](https://angular.io/docs/ts/latest/guide/testing.html), [E2E](https://angular.github.io/protractor/#/faq#what-s-the-difference-between-karma-and-protractor-when-do-i-use-which-)), [Karma](https://karma-runner.github.io/), [Protractor](https://angular.github.io/protractor/), [Jasmine](https://github.com/jasmine/jasmine), [Istanbul](https://github.com/gotwarlost/istanbul), [TypeScript](http://www.typescriptlang.org/), [@types](https://www.npmjs.com/~types), [TsLint](http://palantir.github.io/tslint/), [Codelyzer](https://github.com/mgechev/codelyzer), [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html), and [Webpack 2](http://webpack.github.io/) by [AngularClass](https://angularclass.com).
+## Development server
 
-Therefor if you see something in here that doesn't appear to be used or doesn't make sense it's because I either don't know how to use it or haven't taken it out yet.  Make an issue and I'll look into it.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  <button class="btn btn-primary fa fa-stethoscope"></button>
+</div>
+<h2>Buttons</h2>
+<div>
+  <table class="table table-hover" *ngIf="buttons.length > 0">
+    <caption>Your current buttons</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Type</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let button of buttons">
+          <th scope="row"><i class="fa fa-database" aria-hidden="true"></i></th>
+          <td><button class="btn btn-default">{{button.name}}</button></td>
+          <td>{{button.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <footer class="footer" *ngIf="buttons.length > 0">
+    <span class="button-count">Total <span class="badge">{{buttons.length}}</span></span>
+  </footer>
+</div>
