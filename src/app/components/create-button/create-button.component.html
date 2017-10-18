@@ -1,0 +1,11 @@
+<form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
+  <div class="form-group">
+    <label for="newButtonName">Name</label>
+    <input type="text" class="form-control" name="name" placeholder="any name will do" [(ngModel)]="model.name" #name="ngModel" required>
+  </div>
+  <div class="form-group">
+    <label for="newButtonName">Type</label>
+    <input type="text" class="form-control" name="type" placeholder="any string" [(ngModel)]="model.type" #type="ngModel" required>
+  </div>
+  <button type="submit" class="btn btn-default">Create New Button</button>
+</form>

@@ -1,0 +1,24 @@
+<h2>Buttons</h2>
+<div>
+  <table class="table table-hover">
+    <caption>Your current buttons</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Type</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let button of buttons">
+          <th scope="row"><i class="fa fa-database" aria-hidden="true"></i></th>
+          <td><button class="btn btn-default">{{button.name}}</button></td>
+          <td>{{button.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <footer class="footer">
+    <span class="button-count">Total <span class="badge">{{buttons.length}}</span></span>
+  </footer>
+  <br>
+  <app-create-button (onBtnCreated)="onBtnCreated($event)"></app-create-button>
+</div>
